@@ -1,0 +1,16 @@
+Programming Fundamentals
+It is advised to have every resource go through the fundamentals, the experienced individuals would be able to go through this exercise fairly quickly and this will serve as a good foundation for inexperienced resources
+
+Pre-Requisites
+Coding Convention
+Following coding conventions is extremely important and must always be stressed upon and strictly followed during the initial training phase. For the purpose of this exercise we will use PSR2, this details of the coding style can be found here https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
+Code Commenting and Documentation
+In any projects that requires a team of more than 3 people throughout its life needs documentation and one of the most efficient way to do so is to use code commenting properly, for the purpose of this exercise trainees must install and use PHPDoc https://www.phpdoc.org/ throughout. They can switch to JSDoc for JavaScript code http://usejsdoc.org/
+Unit Testing
+Writing efficient and readable code is not the only requirement, writing code that is maintainable is a key requirement in any corporate environment and therefore the trainees must be familiarized with unit testing and should be able to test their own code. For the purpose of this exercise they must be use PHPUnit for PHP and QUnit for JavaScript.
+Code Maintenance
+In any team programming environment use of source control management is a must. The resources must be familiarized with the two widely used SCM strategies namely centralized and distributed. For the purpose of this exercise they must use SVN and Git to manage the code they are writing.
+Introduction to PHP
+PHP is one of the most popular programming languages for web development and is fairly easy to learn and use therefore the trainees must get themselves familiar with the language in order to effectively use it.
+Data Structures
+The trainee must develop an understanding of how variables, arrays and objects are declared, used and more importantly how they work i.e. how PHP stores them, how does type casting work, how is PHP able to let you use variable without specifying the type, how can you easily change the type of a data structures, etc.
