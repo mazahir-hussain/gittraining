@@ -5,13 +5,9 @@ require_once 'mockobjects_2.php';
 class TestSumsUp extends PHPUnit_Framework_Testcase
 {
   /**
-   * [test_func description]
-   * @param  [type] $input [description]
-   * @return [type]        [description]
+   * tests fibonaccif function
+   * @return [type] checks assertions
    */
-  // /**
-  //  * @dataProvider inputData
-  //  */
   public function test_func()
   {
     $mock = $this->getMockBuilder('SumsUp')
@@ -29,15 +25,30 @@ class TestSumsUp extends PHPUnit_Framework_Testcase
     $mock->method('fibonacci')->will($this->returnValueMap($map));
 
 
-    $mock->fibonacci(1);
-    $mock->fibonacci(2);
-    $mock->fibonacci(3);
-    $mock->fibonacci(4);
-    $mock->fibonacci(5);
+    $this->assertEquals($mock->fibonacci(1),1);
+    $this->assertEquals($mock->fibonacci(2),1);
+    $this->assertEquals($mock->fibonacci(3),2);
+    $this->assertEquals($mock->fibonacci(4),3);
   }
 
-  // public function inputData()
-  // {
-  //   return array(array(1,2,3,4,5,6));
-  // }
+  /**
+   * tests sumofArray function
+   * @return [type] checks assertions
+   */
+  public function test_func2()
+  {
+    $mock = $this->getMockBuilder('SumsUp')
+    ->setMethods(array('sumOfArray'))
+    ->getMock();
+
+    $map2 = array(
+      array([1,2,3],6),
+      array([3,5,7],15)
+    );
+
+    $mock->method('sumOfArray')->will($this->returnValueMap($map2));
+
+    $this->assertEquals($mock->sumOfArray(array(1,2,3)),6);
+    $this->assertEquals($mock->sumOfArray(array(3,5,7)),15);
+  }
 }
