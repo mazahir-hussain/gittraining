@@ -6,16 +6,26 @@ class SumsUp
   {
 
   }
-  // function sumOfArray($array)
-  // {
-  //   $sum = 0;
-  //   foreach ($array as $val1)
-  //   {
-  //     $sum = $sum+$val1;
-  //   }
-  //   return $sum;
-  // }
+  /**
+   * calculates sum of array
+   * @param  [type] $array array of numbers
+   * @return [type]        sum of all elements
+   */
+  function sumOfArray($array)
+  {
+    $sum = 0;
+    foreach ($array as $val1)
+    {
+      $sum = $sum+$val1;
+    }
+    return $sum;
+  }
 
+/**
+ * calculates fibonacci number on $numth position
+ * @param  [type] $num nth number
+ * @return [type]      value of number
+ */
   function fibonacci ($num)
   {
     if ($num == 1 || $num == 2)
